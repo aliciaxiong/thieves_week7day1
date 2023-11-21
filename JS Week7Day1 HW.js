@@ -19,12 +19,11 @@ function findWords(dog_string, dog_names){
 // found online that javascript has an includes() method that can be used to match 
 // I will have to then use the else statement for the NO Matches
     for(let i=0; i < dog_names.length; i++) {
-        let name = dog_names[i];
         if (dog_string.toLowerCase().includes(name.toLowerCase())) {
             return console.log(`Matched ${dog_names}`)
         } 
         else {
-            return console.log("No Match")
+            return console.log("No Match");
         }
     }
 }
@@ -97,5 +96,5 @@ function isDivisible(n, x, y) {
         return false;
     }
 }
-console.log(isDivisible(4, 25, 40))
-console.log(isDivisible(5, 30, 60))
+console.log(isDivisible(40, 3, 10))
+console.log(isDivisible(30, 5, 5))
