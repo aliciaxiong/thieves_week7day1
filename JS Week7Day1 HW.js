@@ -19,11 +19,11 @@ function findWords(dog_string, dog_names){
 // found online that javascript has an includes() method that can be used to match 
 // I will have to then use the else statement for the NO Matches
     for(let i=0; i < dog_names.length; i++) {
-        if (dog_string.toLowerCase().includes(name.toLowerCase())) {
-            return console.log(`Matched ${dog_names}`)
+        if (dog_string.toLowerCase().includes(dog_names[i].toLowerCase())) {
+             console.log(`Matched ${dog_names[i]}`)
         } 
         else {
-            return console.log("No Match");
+            console.log("No Match");
         }
     }
 }
